@@ -1,10 +1,25 @@
 <!doctype html>
 <html lang="fr">
+
 <head>
-  <meta charset="utf-8">
-  <title>Titre de la page</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <title>Titre de la page</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+<h1>Quiz</h1>
+    <script src="../data/index.js"></script>
+    <script>
+        recupereQuestions(1).then(questions => {
+            questions.forEach(question => {
+                console.log(question);;
+            })
+        }).catch(err => {
+         console.log('erreur réseau');
+
+      })
+    </script>
 </body>
+
 </html>
