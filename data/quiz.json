@@ -1,0 +1,35 @@
+{
+    "questions" : [
+        {
+            "id" : 1,
+            "titre" : "Question 1",
+            "img" : "/assets/img/img.png",
+            "reponses" : [
+                {
+                    "id" : 1,
+                    "titre" : "oui",
+                    "correcte" : true
+                },
+                {
+                    "id" : 2,
+                    "titre" : "non"
+                }
+            ]
+        },
+        {
+            "id" : 2,
+            "titre" : "Question 2",
+            "reponses" : [
+                {
+                    "id" : 1,
+                    "titre" : "1",
+                    "correcte" : true
+                },
+                {
+                    "id" : 2,
+                    "titre" : "1"
+                }
+            ]
+        }
+    ]
+}
