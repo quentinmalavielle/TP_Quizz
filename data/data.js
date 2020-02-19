@@ -19,6 +19,16 @@ export const listeTheme = [
       id: 2,
       titre: "Le surréalisme",
       idTheme: 1
+    },
+    {
+      id: 1,
+      titre: "Les peintres de la renaissance 2",
+      idTheme: 2
+    },
+    {
+      id: 2,
+      titre: "Le surréalisme 2",
+      idTheme: 2
     }
   ];
   
@@ -28,4 +38,8 @@ export const listeTheme = [
   
   export function getQuiz(id) {
     return listeQuiz.find(item => item.id === id);
+  }
+
+  export function getListQuiz(idTheme) {
+    return listeQuiz.find(item => item.id === idTheme);
   }

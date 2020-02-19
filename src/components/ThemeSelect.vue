@@ -8,12 +8,7 @@
       {{ theme ? theme.titre : "Choisir un thème..." }}
     </button>
     <div class="btn-group-vertical btn-group-lg" v-if="montrerListe">
-      <button
-        type="button"
-        class="btn btn-secondary"
-        v-for="theme in listeTheme"
-        :key="theme.id"
-        @click="selectTheme(theme)"
+      <button type="button" class="btn btn-secondary" v-for="theme in listeTheme" :key="theme.id" @click="selectTheme(theme)"
       >
         {{ theme.titre }}
       </button>
