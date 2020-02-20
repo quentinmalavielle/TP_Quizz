@@ -22,12 +22,12 @@ export const listeTheme = [
     },
     {
       id: 1,
-      titre: "Les peintres de la renaissance 2",
+      titre: "Roi",
       idTheme: 2
     },
     {
       id: 2,
-      titre: "Le surréalisme 2",
+      titre: "reine",
       idTheme: 2
     }
   ];
@@ -41,5 +41,5 @@ export const listeTheme = [
   }
 
   export function getListQuiz(idTheme) {
-    return listeQuiz.find(item => item.id === idTheme);
+    return listeQuiz.filter(item => item.idTheme === idTheme);
   }
